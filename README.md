@@ -1,6 +1,6 @@
-# Webpack-starter
+# Aplicación To-do
 
-Este proyecto es una base para aplicaciones que usen webpack
+Este es un proyecto básico de una aplicación todo. Se va a mejorar tanto el diseño como algunas funcionalidades.
 
 ### Notas:
 
