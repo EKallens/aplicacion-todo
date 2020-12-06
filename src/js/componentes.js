@@ -5,7 +5,6 @@ import { todoList } from '../index';
 //Referencia a elementos HTML
 const divTodoList          = document.querySelector('.todo-list');
 const txtInput             = document.querySelector('.new-todo');
-const btnBorrarCompletados = document.querySelector('.clear-completed');
 const ulFiltros            = document.querySelector('.filters');
 const anchorFiltros        = document.querySelectorAll('.filtro');
 const totalPendientes      = document.querySelector('.todo-count');
@@ -75,17 +74,6 @@ divTodoList.addEventListener('click', (event) => {
 
 });
 
-btnBorrarCompletados.addEventListener('click', () => {
-
-    for( let i = divTodoList.children.length-1; i>=0; i-- ){
-        const elemento = divTodoList.children[i];
-        if(elemento.classList.contains('completed')){
-            divTodoList.removeChild(elemento);
-        }
-    }
-
-    todoList.borrarCompletados();
-});
 
 ulFiltros.addEventListener('click', (event) => {
     const filtro = event.target.text;

@@ -50,7 +50,6 @@ export class TodoList {
 
     calcularPendientes(){
         let totalPendientes = this.todos.filter( (todo) => !todo.completado);
-        console.log(totalPendientes.length);
         return totalPendientes.length;
     }
 
